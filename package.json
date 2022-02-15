@@ -1,0 +1,19 @@
+{
+  "name": "markov",
+  "version": "1.0.0",
+  "description": "Practicing with Markov Machines",
+  "main": "makeText.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katemoser/node-markov.git"
+  },
+  "author": "Kate and Yong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katemoser/node-markov/issues"
+  },
+  "homepage": "https://github.com/katemoser/node-markov#readme"
+}

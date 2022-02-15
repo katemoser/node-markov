@@ -28,6 +28,22 @@ class MarkovMachine {
 
   getChains() {
     // TODO: implement this!
+    const chains = {};
+
+    for (let i = 0; i < this.words.length - 1; i++) {
+      if (chains[this.words[i]]) {
+        // chains.[this.words[i]].push(this.words[i + 1]);
+      } else {
+        chains[this.words[i] = [this.words[i + 1]]];
+      }
+    }
+    const lastIndex = this.words.length - 1;
+    if (this.words[lastIndex]) {
+      // chains[this.words[lastIndex]].push(null);
+    } else {
+      chains[this.words[lastIndex]] = [null];
+    }
+    //append null to entry for last word
   }
 
 
