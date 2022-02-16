@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/katemoser/node-markov/issues"
   },
-  "homepage": "https://github.com/katemoser/node-markov#readme"
+  "homepage": "https://github.com/katemoser/node-markov#readme",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
 }
