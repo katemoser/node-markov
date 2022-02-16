@@ -46,6 +46,21 @@ describe("getText", function () {
         expect(text).toEqual("egg duck ham");
     });
 
+    test("See if markov actually works", function () {
+        machine = new MarkovMachine("egg duck egg ham egg cat");
+        let text = machine.getText();
+        let arr = text.split(" ");
+        let secondword = arr[1];
+        expect(secondword).not.toEqual("egg");
+        expect(["duck", "ham", "cat"]).toContain(secondword);
+    })
+
+    test("Check last word", function() {
+        let text = machine.getText();
+        let lastword = text.split(" ").at(-1);
+        expect(lastword).toEqual("duck");
+    })
+
 })
 
 
